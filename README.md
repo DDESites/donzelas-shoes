@@ -58,7 +58,7 @@ extraídas do **álbum "Fotos" (364 itens) da página oficial do Facebook**
 (`facebook.com/profile.php?id=100093458958698`), que espelha os posts do Instagram —
 o feed antigo do Instagram exige login, mas o álbum do Facebook abre sem sessão.
 Foram baixadas **325 fotos** (dez/2022 a dez/2024), reorganizadas em `PRODUTOS` e
-publicadas em `assets/img/produtos/` (1000 px, JPEG q82 — 233 arquivos, ~49 MB).
+publicadas em `assets/img/produtos/` (máx. 1100 px, JPEG q82 — 233 arquivos, 23,3 MB).
 
 Como os dados foram tratados (critério de aceite: nada inventado):
 
@@ -102,7 +102,7 @@ Tipos novos em `TIPOS`: Tênis, Mocassims, Bolsas e mochilas, Cintos e acessóri
 - `assets/css/style.css` — estilos (paleta grafite/creme/bege/rosa blush do PRD)
 - `assets/js/data.js` — **configuração da loja + catálogo de 85 produtos** (arquivo a editar)
 - `assets/js/app.js` — comportamento das páginas
-- `assets/img/produtos/` — fotos dos produtos (1000 px)
+- `assets/img/produtos/` — fotos dos produtos (máx. 1100 px)
 - `_fonte/` — dados de origem e scripts do catálogo (não publicado no site)
 
 ## Antes de publicar (pendências)
@@ -126,3 +126,23 @@ Tipos novos em `TIPOS`: Tênis, Mocassims, Bolsas e mochilas, Cintos e acessóri
 Duplo clique em `index.html`, ou:
 
     npx serve donzelas-shoes
+
+Servidor local incluso (PowerShell):
+
+    .\server.ps1          # http://localhost:8747
+
+## Publicação (GitHub Pages)
+
+O site está publicado em **https://ddesites.github.io/donzelas-shoes/**
+
+- Repositório: [github.com/DDESites/donzelas-shoes](https://github.com/DDESites/donzelas-shoes) (público, é o que o GitHub Pages exige)
+- Build: GitHub Pages servindo a raiz da branch `main` (sem etapa de build — é HTML/CSS/JS puro)
+- `_fonte/` fica no repositório como documentação do pipeline, mas o Jekyll do Pages **não o publica** (pastas iniciadas em `_` são ignoradas por padrão)
+- Para republicar: `git push` e o Pages recompõe o site em ~1 minuto
+
+    git add -A
+    git commit -m "descricao da mudanca"
+    git push
+
+Ao editar preços ou tamanhos em `assets/js/data.js`, basta enviar o commit — não há
+outro passo de build.

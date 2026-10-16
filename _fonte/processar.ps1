@@ -33,7 +33,8 @@ foreach ($m in $manifesto) {
   if (-not (Test-Path $orig)) { continue }
   try {
     $img = [System.Drawing.Image]::FromFile($orig)
-    $escala = [Math]::Min(1, $tamanhoSite / [Math]::Max($img.Width, $img.Height))
+    # 1.0 (double), senao o PowerShell converte a escala para int e vira 1
+    $escala = [Math]::Min(1.0, $tamanhoSite / [Math]::Max($img.Width, $img.Height))
     $w = [int]($img.Width * $escala); $h = [int]($img.Height * $escala)
     $bmp = New-Object System.Drawing.Bitmap($w, $h)
     $g = [System.Drawing.Graphics]::FromImage($bmp)
