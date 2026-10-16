@@ -1,0 +1,13 @@
+# Originais em alta resolução baixados do CDN (49 MB).
+# Regeneráveis com _fonte/baixar.ps1 a partir de _fonte/produtos-assinados.json.
+_fonte/fotos/
+
+# Artefatos de teste/verificação (não fazem parte do site)
+_fonte/*.png
+_fonte/folhas/
+_*.html
+
+# Sistema/editores
+Thumbs.db
+.DS_Store
+*.log

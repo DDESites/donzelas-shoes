@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sobre a loja — Donzelas Shoes</title>
+<meta name="description" content="A história da Donzelas Shoes: 4 anos de loja em Águas Lindas de Goiás, revendedora autorizada de Arezzo, Anacapri, Brizza e Santa Lolla.">
+<meta name="theme-color" content="#F5F1EA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="assets/img/marca/favicon.svg">
+</head>
+<body data-page="sobre">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<div id="topbar" class="topbar" role="region" aria-label="Avisos da loja"></div>
+<header id="site-header" class="site-header"></header>
+<div id="menu-mobile" class="mobile-menu" hidden></div>
+<div id="busca-overlay" class="search-overlay" hidden></div>
+
+<main id="conteudo">
+  <div class="container">
+    <div class="page-head">
+      <p class="eyebrow">Sobre a loja</p>
+      <h1>Uma história de 4 anos <em style="font-family:var(--font-script);font-style:normal">feita com você</em></h1>
+      <p>Em setembro de 2026 a Donzelas Shoes completou 4 anos — e a comemoração foi com quem faz essa história acontecer: você.</p>
+    </div>
+
+    <div class="institucional" style="padding-bottom:2rem">
+      <img src="assets/img/instagram/aniv4-post4.jpg" alt="Bolo rosa decorado com laço preto na comemoração de 4 anos da Donzelas Shoes" loading="lazy" width="640" height="640">
+      <div>
+        <h2 style="margin-top:0">Do sonho para o balcão</h2>
+        <p>A Donzelas Shoes nasceu em Águas Lindas de Goiás com uma missão simples: reunir as melhores
+           marcas de calçados femininos em um lugar com atendimento de verdade — aquele em que a cliente
+           é conhecida, bem atendida e sai linda de cada visita.</p>
+        <p>Hoje somos <strong>revendedora autorizada e exclusiva</strong> de quatro marcas que o Brasil inteiro conhece:
+           <strong>Arezzo, Anacapri, Brizza e Santa Lolla</strong>. E enviamos para todo o Brasil pelo WhatsApp.</p>
+        <div class="selo-row">
+          <span class="selo">Arezzo</span><span class="selo">Anacapri</span>
+          <span class="selo">Brizza</span><span class="selo">Santa Lolla</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="institucional" style="padding-bottom:2rem">
+      <div>
+        <h2 style="margin-top:0">Como comprar com a Donzelas</h2>
+        <ol style="color:var(--ink-soft);padding-left:1.2rem;display:flex;flex-direction:column;gap:.7rem">
+          <li><strong>Escolha o modelo</strong> — no site, no Instagram ou aqui na loja.</li>
+          <li><strong>Fale no WhatsApp</strong> — enviamos fotos, tamanhos disponíveis e valores atualizados.</li>
+          <li><strong>Combine entrega ou retirada</strong> — enviamos para todo o Brasil ou você retira na loja.</li>
+          <li><strong>Pague do seu jeito</strong> — Pix, cartão ou dinheiro.</li>
+        </ol>
+        <p class="mt-2"><a class="btn btn--wa" id="sobre-wa" href="#" target="_blank" rel="noopener">Começar pelo WhatsApp</a></p>
+      </div>
+      <img src="assets/img/instagram/aniv4-post1.jpg" alt="Convite oficial do 4º aniversário da Donzelas Shoes com as marcas Arezzo, Anacapri, Brizza e Santa Lolla" loading="lazy" width="640" height="640">
+    </div>
+
+    <div class="institucional" style="padding-bottom:3rem">
+      <img src="assets/img/instagram/aniv-post1.jpg" alt="Logotipo da Donzelas Shoes na parede da loja, em uma comemoração com bolo e balões" loading="lazy" width="640" height="640">
+      <div>
+        <h2 style="margin-top:0">Venha nos conhecer</h2>
+        <p>Nossa loja fica em Mansões Olinda, em Águas Lindas de Goiás.
+           Passe para conhecer a vitrine, experimentar e levar o seu par favorito.</p>
+        <p><strong>Endereço:</strong> Rua 10, Quadra A6, Lote 23 — Mansões Olinda<br>
+           Águas Lindas de Goiás — GO · CEP 72910-000</p>
+        <p><a class="btn btn--ghost" id="sobre-mapa" href="#" target="_blank" rel="noopener">Abrir no mapa</a></p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+<a id="wa-float" class="wa-float" href="#" target="_blank" rel="noopener">
+  <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.7 7.4L3.5 20.5l1.7-4.7A8.5 8.5 0 1 1 21 11.5z"/></svg>
+</a>
+
+<noscript><p class="container" style="padding:1rem 0">Fale conosco pelo WhatsApp (61) 99125-1703.</p></noscript>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+  document.getElementById("sobre-wa").href =
+    waLink("Olá! Vim pelo site da Donzelas Shoes 🙂 Queria conhecer os modelos disponíveis.");
+  document.getElementById("sobre-mapa").href = LOJA.mapa;
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Entrega, pagamento e trocas — Donzelas Shoes</title>
+<meta name="description" content="Informações de entrega, retirada, formas de pagamento e trocas da Donzelas Shoes. Condições confirmadas pelo atendimento no WhatsApp.">
+<meta name="theme-color" content="#F5F1EA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="assets/img/marca/favicon.svg">
+</head>
+<body data-page="politicas">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<div id="topbar" class="topbar" role="region" aria-label="Avisos da loja"></div>
+<header id="site-header" class="site-header"></header>
+<div id="menu-mobile" class="mobile-menu" hidden></div>
+<div id="busca-overlay" class="search-overlay" hidden></div>
+
+<main id="conteudo">
+  <div class="container" style="max-width:820px">
+    <div class="page-head">
+      <p class="eyebrow">Informações</p>
+      <h1>Entrega, pagamento e trocas</h1>
+      <p>Reunimos aqui o essencial. Como cada pedido é combinado diretamente com você,
+         as condições finais são sempre confirmadas no atendimento pelo WhatsApp.</p>
+    </div>
+
+    <section class="contato-card" id="entrega" style="margin-bottom:1.2rem">
+      <h2>Entrega e envio</h2>
+      <p>Enviamos para todo o Brasil. O frete e o prazo são combinados no atendimento,
+         de acordo com o seu CEP e a disponibilidade do produto.</p>
+      <p>Também fazemos <strong>retirada na loja</strong>, em Mansões Olinda, Águas Lindas de Goiás —
+         é só combinar pelo WhatsApp.</p>
+      <a class="btn btn--sm btn--wa" id="p-wa-entrega" href="#" target="_blank" rel="noopener">Consultar frete e prazo</a>
+    </section>
+
+    <section class="contato-card" id="pagamento" style="margin-bottom:1.2rem">
+      <h2>Formas de pagamento</h2>
+      <p>Pix, cartão e dinheiro. Condições de parcelamento e promoções variam conforme a marca
+         e a campanha — confirme no atendimento.</p>
+    </section>
+
+    <section class="contato-card" id="trocas" style="margin-bottom:1.2rem">
+      <h2>Trocas e devoluções</h2>
+      <p>Escolheu e ficou na dúvida do tamanho? Fale com a gente: a troca é combinada
+         diretamente com o atendimento, conforme a disponibilidade do modelo.</p>
+      <p><small>Prazos e condições formais de troca e devolução serão detalhados aqui
+         após confirmação com a loja.</small></p>
+      <a class="btn btn--sm btn--wa" id="p-wa-troca" href="#" target="_blank" rel="noopener">Falar sobre uma troca</a>
+    </section>
+
+    <section class="contato-card" id="privacidade" style="margin-bottom:2.4rem">
+      <h2>Privacidade</h2>
+      <p>Os dados enviados pelos canais de atendimento (nome, telefone, endereço e dados do pedido)
+         são usados apenas para o atendimento e a entrega do seu pedido. Não compartilhamos
+         suas informações com terceiros para fins de marketing.</p>
+    </section>
+  </div>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+<a id="wa-float" class="wa-float" href="#" target="_blank" rel="noopener">
+  <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.7 7.4L3.5 20.5l1.7-4.7A8.5 8.5 0 1 1 21 11.5z"/></svg>
+</a>
+
+<noscript><p class="container" style="padding:1rem 0">Fale conosco pelo WhatsApp (61) 99125-1703.</p></noscript>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+  document.getElementById("p-wa-entrega").href =
+    waLink("Olá! Queria consultar frete e prazo de envio para o meu CEP 🙂");
+  document.getElementById("p-wa-troca").href =
+    waLink("Olá! Preciso de ajuda com uma troca de produto 🙂");
+</script>
+</body>
+</html>

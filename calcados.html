@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calçados — Donzelas Shoes</title>
+<meta name="description" content="Catálogo de calçados femininos da Donzelas Shoes: scarpins, sandálias, mules, botas e rasteiras das marcas Arezzo, Anacapri, Brizza e Santa Lolla.">
+<meta name="theme-color" content="#F5F1EA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="assets/img/marca/favicon.svg">
+</head>
+<body data-page="calcados">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<div id="topbar" class="topbar" role="region" aria-label="Avisos da loja"></div>
+<header id="site-header" class="site-header"></header>
+<div id="menu-mobile" class="mobile-menu" hidden></div>
+<div id="busca-overlay" class="search-overlay" hidden></div>
+
+<main id="conteudo">
+  <div class="container">
+    <div class="page-head">
+      <p class="eyebrow">Catálogo</p>
+      <h1>Calçados femininos</h1>
+      <p>Arezzo, Anacapri, Brizza e Santa Lolla. A vitrine muda toda semana —
+         filtre por marca e tipo, e chame no WhatsApp para confirmar tamanhos, cores e valores.</p>
+    </div>
+
+    <p id="busca-vitrine" class="selo" hidden style="display:inline-block"></p>
+
+    <div class="filtros" role="group" aria-label="Filtrar por marca" id="filtro-marcas"></div>
+    <div class="filtros">
+      <label class="sr-only" for="filtro-tipo">Tipo de calçado</label>
+      <select id="filtro-tipo"></select>
+      <label class="sr-only" for="filtro-ord">Ordenar por</label>
+      <select id="filtro-ord">
+        <option value="novos">Mais recentes</option>
+        <option value="preco-asc">Menor preço</option>
+        <option value="preco-desc">Maior preço</option>
+        <option value="novidades">Novidades</option>
+        <option value="ofertas">Ofertas</option>
+      </select>
+    </div>
+
+    <div class="resultado-bar">
+      <span id="contador"></span>
+      <span>Preços e disponibilidade: confirme pelo WhatsApp.</span>
+    </div>
+
+    <div class="grid grid--4" id="grade-produtos"></div>
+
+    <div id="estado-vazio" class="vazio" hidden>
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" style="width:44px;height:44px;opacity:.5"><path d="M3.5 16.5v-6h3l2.2 2.2h4.6c2.6 0 4.4 1.2 6.2 2.6 1 .8 1 2.2 1 3.2h-17z"/><path d="M6.5 10.5V7.8h2.6"/></svg>
+      <h3 id="vazio-titulo"></h3>
+      <p id="vazio-texto"></p>
+      <a class="btn btn--wa" id="vazio-cta" href="#" target="_blank" rel="noopener">Ver modelos no WhatsApp</a>
+    </div>
+
+    <section class="section" aria-labelledby="t-marcas-cat">
+      <div class="section-head">
+        <div>
+          <h2 id="t-marcas-cat">Compre por marca</h2>
+          <p>Prefere uma marca específica? Fale com a gente e mostramos a coleção atual.</p>
+        </div>
+      </div>
+      <div class="marcas" id="marcas-cat"></div>
+    </section>
+  </div>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+<a id="wa-float" class="wa-float" href="#" target="_blank" rel="noopener">
+  <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.7 7.4L3.5 20.5l1.7-4.7A8.5 8.5 0 1 1 21 11.5z"/></svg>
+</a>
+
+<noscript><p class="container" style="padding:1rem 0">Ative o JavaScript para ver o catálogo. Fale conosco pelo WhatsApp (61) 99125-1703.</p></noscript>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+  document.getElementById("marcas-cat").innerHTML = LOJA.marcas.map(m =>
+    `<a class="marca-card" href="${waLink("Olá! Queria ver a coleção atual da " + m.nome + " 🙂")}" target="_blank" rel="noopener"><span>${m.nome}</span></a>`).join("");
+</script>
+</body>
+</html>
